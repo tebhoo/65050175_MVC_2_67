@@ -37,14 +37,6 @@ class Model {
         return suits.stream().filter(s -> s.getId() == suitId).findFirst().orElse(null);
     }
 
-    //เช็คความทนทาน
-    public boolean isDurabilityValid(Suit suit) {
-        if (suit.getType().equals("power")) return suit.getDurability() >= 70; //ชุดทรงพลัง
-        if (suit.getType().equals("stealth")) return suit.getDurability() >= 50; //ชุดลอบเร้น
-        if (suit.getType().equals("identitymask")) return !(suit.getDurability() % 10 == 3 || suit.getDurability() % 10 == 7); //ชุดปกปิดตัวตน
-        return false;
-    }
-
     //ซ่อมชุด
     public void repairSuit(Suit suit) {
         if (suit.getDurability() < 100) {

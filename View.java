@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class View extends JFrame {
-    private JTextField suitIdField = new JTextField(10);
+    private JTextField suitIdField = new JTextField(6);
     private JButton checkButton = new JButton("Check Suit");
     private JButton repairButton = new JButton("Repair Suit");
     private JLabel suitInfo = new JLabel("");

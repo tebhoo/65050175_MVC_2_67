@@ -25,7 +25,7 @@ class Controller {
             }
             
             view.setSuitInfo(currentSuit.getInfo());
-            if (model.isDurabilityValid(currentSuit)) {
+            if (currentSuit.isDurabilityValid()) {
                 view.setResultText("Suit is valid.");
                 view.enableRepairButton(false);
             } else {
