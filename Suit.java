@@ -21,5 +21,7 @@ class Suit {
     public String getType() { return type; }
     public int getDurability() { return durability; }
     public void setDurability(int durability) { this.durability = durability; }
+
+    //เช็คความทนทาน
     public boolean isDurabilityValid() { return suitType.isDurabilityValid(durability); }
 }
